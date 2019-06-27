@@ -104,3 +104,5 @@ it may take couple of minutes for jenkins to be up and running
 * Need more time to figure out why kubernetes-cd is only deploying to the `default` namespace of minikube
 
 
+#### Owner
+Amit Sarkar
