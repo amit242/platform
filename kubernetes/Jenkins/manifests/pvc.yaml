@@ -1,0 +1,13 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: jenkins-master-pvc
+  labels:
+    "app.kubernetes.io/name": 'jenkins'
+    "app.kubernetes.io/component": "jenkins-master"
+spec:
+  accessModes:
+    - "ReadWriteOnce"
+  resources:
+    requests:
+      storage: "8Gi"
