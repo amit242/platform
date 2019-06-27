@@ -91,6 +91,7 @@ it may take couple of minutes for jenkins to be up and running
 * No RBAC in kubernetes or Jenkins
 * Job definition is moved to [this public repositry](https://github.com/amit242/jobdsl/blob/master/app.dsl), for JCASC to access and build. This could have been avoided by creating a seed job
 * Could not implement docker image publish as uploading images to docker hub was taking a lot of time. Tried a private registry (`registry/docker-compose.yaml`) but disabling tls verification for the private registry was not trivial in minikube. This Limitation can easily be fixed by having a local registry.
+* kubernetes-cd can't delete deployments at the momen
 
 ## Improvements 
 * Linting and static code analysis
@@ -99,5 +100,7 @@ it may take couple of minutes for jenkins to be up and running
 * Security
 * Scalability
 * Operations using gitops
+* Modularize declarative pipeline by having shared pipeline libraries
+* Need more time to figure out why kubernetes-cd is only deploying to the `default` namespace of minikube
 
 
